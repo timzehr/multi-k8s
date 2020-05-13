@@ -24,7 +24,7 @@
         },
         {
             "name": "ninx",
-            "image": "timzehr/multi-ninx",
+            "image": "timzehr/multi-nginx",
             "hostname": "nginx",
             "essential": true,
             "portMappings": [
