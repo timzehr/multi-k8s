@@ -3,7 +3,7 @@ kind: ClusterIssuer
 metadata:
   name: letsencrypt-prod
 spec:
-  acma:
+  acme:
     server: https://acme-v02.api.letsencrypt.org/directory
     email: timzehr@dzehr.com
     privateKeySecretRef:
