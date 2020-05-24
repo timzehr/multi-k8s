@@ -1,0 +1,20 @@
+apiVersion: cert-manager.io/v1alpha2
+kind: Certificate
+metadata:
+  name: timzehr-org-tls
+spec:
+  secretName: timzehr-org
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer
+  commonName: timzehr.org
+  dnsNames:
+    - timzehr.org
+    - www.timzehr.org
+  acme:
+    config:
+      - http01:
+          ingressClass: nginx
+        domains:
+          - timzehr.org
+          - www.timzehr.org
