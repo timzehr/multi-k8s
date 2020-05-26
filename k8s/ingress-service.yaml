@@ -14,7 +14,7 @@ spec:
         - www.timzehr.org
       secretName: k8s-multi-com
   rules:
-    - host: timzehr.com
+    - host: timzehr.org
       http:
         paths:
           - path: /
@@ -26,6 +26,7 @@ spec:
               serviceName: server-cluster-ip-service
               servicePort: 5000
     - host: www.timzehr.org
+      http:
         paths:
           - path: /
             backend:
